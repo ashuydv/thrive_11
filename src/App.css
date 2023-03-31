@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+    --orange: #ff6100;
+    --blue: #004aad;
+    --green: #64c432;
+    --yellow: #fffb00;
+    --purple: #38136c;
+}
+
+* {
+    font-family: "Kanit", sans-serif;
+}
+
+#video-banner {
+    background-image: url(./assets/video.mp4);
+}
+
+.logo {
+    max-width: 150px;
+}
+
+@media screen and (min-width: 300px) {
+    .logo {
+        max-width: 100px;
+        width: 100%;
+    }
+    header {
+        backdrop-filter: saturate(180%) blur(5px);
+    }
+    header .container {
+        padding: 0.25rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .title-font {
+        margin: 0rem;
+    }
+    #waitlist {
+        padding: 0.5rem 1rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #waitlist .title-font {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+    #waitlist:first-child {
+        margin-bottom: 1rem !important;
+    }
+    #video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100vh;
+    }
+    #video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #waitlist {
+        flex-direction: column;
+        padding: 1rem 2rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #waitlist #first-child,
+    #waitlist #second-child {
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #waitlist .title-font {
+        font-size: 48px;
+        line-height: 1.2;
+    }
+    #video {
+        height: 90vh;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header .container {
+        padding: 0.25rem 4rem;
+    }
+    header .logo {
+        max-width: 160px;
+    }
+    #waitlist {
+        padding: 1rem 4rem;
+        flex-direction: row;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #hero {
+        padding: 1rem 10rem !important;
+    }
+    #waitlist #first-child,
+    #waitlist #second-child {
+        align-items: flex-start;
+        text-align: left !important;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    #waitlist #second-child {
+        flex-direction: column;
+        align-items: center;
+    }
+    #video {
+        height: 100vh;
+    }
+    .title-font {
+        font-size: 2.75rem !important;
+        line-height: 1.2;
+    }
+    .title-font #small-texts {
+        font-size: 1.8rem !important;
+    }
+    /* Feature Card */
+    /* .feature_card img {
+        border: 4px solid transparent;
+        transition: border 0.2s ease-out;
+    }
+    .feature_card:hover img {
+        border: 4px solid var(--orange);
+    } */
+    #feature-section {
+        background-image: url(assets/bg1.webp);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #cta h1 {
+        font-size: 4rem !important;
+    }
+    .Typewriter {
+        font-size: 4rem !important;
+        color: #121212 !important;
+    }
+    .stats {
+        font-size: 3.2rem !important;
+        margin-bottom: 1rem;
+    }
+}
