@@ -12,13 +12,13 @@ const Features = () => {
     <div>
       <section className="text-gray-400 bg-black body-font relative" id="feature-section">
         <div className="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
-          <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+          <div class="flex flex-col text-center w-full mb-20 sm:mb-0" id="title__section">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 sm:mb-0 text-white">
               Why Thrive11?
             </h1>
           </div>
-          <div className="flex justify-between">
-            <div className="flex justify-around flex-col">
+          <div className="flex justify-between" id="feature_section">
+            <div className="flex justify-around flex-col" id="feature__cards">
               <div class="w-80 flex items-center p-4 ml-16 rounded-lg bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 z-10 feature_card">
                 <div class="w-16 h-16 bg-transparent object-cover object-center flex-shrink-0 rounded-full mr-4  relative">
                   {/* <i class="fa-regular fa-user absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-2xl "></i> */}
@@ -60,15 +60,15 @@ const Features = () => {
                 </div>
               </div>
             </div>
-            <div className="">
+            <div className="img-section">
               <img
                 className="w-[600px] h-[600px] space-y-16 object-cover object-center rounded-full border-spacing-60 m-2 border-dashed border-2 border-white"
                 alt=""
                 src={Stock}
               />
             </div>
-            <div className="flex justify-around flex-col">
-              <div class="w-80 flex items-center p-4 mr-16 rounded-lg bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 z-10 feature_card">
+            <div className="flex justify-around flex-col" id="feature__cards feature_card_two">
+              <div class="w-80 flex items-center p-4 mr-16 rounded-lg bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 z-10 feature_card_two">
                 <div class="w-16 h-16 bg-transparent object-cover object-center flex-shrink-0 rounded-full mr-4 relative">
                   {/* <i class="fa-solid fa-graduation-cap absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-2xl "></i> */}
                   <img src={feature4} alt="" />
@@ -82,7 +82,7 @@ const Features = () => {
                   </p>
                 </div>
               </div>
-              <div class="w-80 flex items-center p-4 ml-12 rounded-lg bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 z-10 feature_card">
+              <div class="w-80 flex items-center p-4 ml-12 rounded-lg bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 z-10 feature_card_two">
                 <div class="w-16 h-16 bg-transparent object-cover object-center flex-shrink-0 rounded-full mr-4 relative">
                   {/* <i class="fa-solid fa-tv absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-2xl "></i>
                    */}
@@ -97,7 +97,7 @@ const Features = () => {
                   </p>
                 </div>
               </div>
-              <div class="w-80 flex items-center p-4 mr-16 rounded-lg bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 z-10 feature_card">
+              <div class="w-80 flex items-center p-4 mr-16 rounded-lg bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 z-10 feature_card_two">
                 <div class="w-16 h-16 bg-transparent object-cover object-center flex-shrink-0 rounded-full mr-4  relative">
                   {/* <i class="fa-solid fa-puzzle-piece absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-2xl "></i> */}
                   <img src={feature6} alt="" />

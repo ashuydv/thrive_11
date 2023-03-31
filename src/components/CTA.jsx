@@ -6,7 +6,10 @@ const CTA = () => {
     <div>
       <section class="text-gray-50 bg-black body-font" id="cta">
         <div class="container px-36 py-24 mx-auto ">
-          <div class="flex flex-col text-center bg-gradient-to-br from-amber-400 via-orange-600 to-orange-800 rounded-3xl w-full p-20 py-32">
+          <div
+            class="flex flex-col text-center bg-gradient-to-br from-amber-400 via-orange-600 to-orange-800 rounded-3xl w-full p-20 py-32"
+            id="cta__container"
+          >
             <h1 class="sm:text-3xl title-font font-bold text-center text-white flex items-center justify-center mb-5">
               <span id="text" className="pr-2">
                 Your
@@ -26,10 +29,16 @@ const CTA = () => {
                 is worth more !!
               </span>
             </h1>
-            <button class="text-black bg-gradient-to-tr from-gray-50 to-gray-100 shadow-md shadow-black py-2 px-10 mt-12 focus:outline-none hover:bg-gray-50 rounded-full w-max mx-auto text-xl">
+            <button
+              class="text-black bg-gradient-to-tr from-gray-50 to-gray-100 shadow-md shadow-black py-2 px-10 mt-12 focus:outline-none hover:bg-gray-50 rounded-full w-max mx-auto text-xl"
+              id="btn-cta"
+            >
               Book a Demo Today !!
             </button>
-            <ul className="flex items-center justify-center text-center w-[820px] mt-12 mx-auto">
+            <ul
+              className="flex items-center justify-center text-center w-[820px] mt-12 mx-auto"
+              id="lists"
+            >
               <li className=" text-lg flex items-start w-72 text-center ">
                 <span className="mx-2">
                   <i class="fa-solid fa-star-of-life"></i>

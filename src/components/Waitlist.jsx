@@ -1,7 +1,7 @@
 import React from "react";
 import Stock from "../assets/stock.png";
 import "../App.css"
-import Vid from "../assets/video.mp4"
+import Vid from "../assets/video.mp4";
 
 const Waitlist = () => {
   return (

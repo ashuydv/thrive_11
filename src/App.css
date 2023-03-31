@@ -19,7 +19,41 @@
     max-width: 150px;
 }
 
-@media screen and (min-width: 300px) {
+
+/* .gw-text-xs,
+.gw-self-center.gw-h-3.gw-w-3.gw-mr-2,
+.gw-flex.gw-items-center.gw-w-full.gw-justify-center {
+    display: none;
+} */
+
+#primaryCTA {
+    background: linear-gradient(135deg, #ff4d00, #ff9100) !important;
+    width: auto !important;
+    border-radius: 2rem !important;
+    padding: 0.5rem 2.5rem !important;
+}
+
+#waitlist__embed {
+    background-image: url(./assets/bg1.webp);
+}
+
+#getWaitlistContainer input {
+    border-color: #8e8e8ead !important;
+}
+
+#getWaitlistContainer :focus-visible {
+    outline: none !important;
+}
+
+.gw-flex.gw-items-center.gw-w-full.gw-justify-center {
+    display: flex !important;
+}
+
+#getWaitlistInnerContainer .gw-mt-4:last-child {
+    display: none !important;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1000px) {
     .logo {
         max-width: 100px;
         width: 100%;
@@ -35,6 +69,9 @@
     }
     header .title-font {
         margin: 0rem;
+    }
+    #hero {
+        height: 80vh !important;
     }
     #waitlist {
         padding: 0.5rem 1rem;
@@ -64,15 +101,106 @@
         object-fit: cover;
         opacity: 0.5;
     }
+    .img-section {
+        display: none;
+    }
+    #waitlist {
+        top: 50%;
+        flex-direction: column-reverse;
+    }
+    #waitlist__embed .container {
+        padding: 0rem !important;
+    }
+    #waitlist__embed .container #waitlist__card {
+        width: 90% !important;
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+    #waitlist__embed .container #waitlist__card .gw-text-2xl {
+        font-size: 1.5rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+    #getWaitlistContainer input,
+    #getWaitlistContainer textarea {
+        width: 100% !important;
+    }
+    .gw-flex.gw-flex-row.gw-justify-center.gw-w-full.gw-mt-2 {
+        flex-direction: column !important;
+    }
+    .gw-flex.gw-flex-row.gw-justify-center.gw-w-full.gw-mt-2 .gw-w-full.gw-pr-2,
+    .gw-flex.gw-flex-row.gw-justify-center.gw-w-full.gw-mt-2 .gw-w-full.gw-pl-2 {
+        padding: 0rem !important;
+        margin: 5px 0px !important;
+    }
+    #title__section {
+        margin-bottom: 1.5rem !important;
+    }
+    #feature_section,
+    #feature_section #feature__cards {
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+    }
+    .feature_card {
+        margin: 0px 10px !important;
+        width: 100% !important;
+        max-width: 450px !important;
+    }
+    #stats {
+        max-width: 340px;
+    }
+    #stats__bg {
+        padding: 2rem !important;
+        margin: 0rem !important;
+    }
+    #stat_card {
+        margin: 0rem !important;
+        width: 100% !important;
+    }
+    #cta .container {
+        padding: 1.5rem !important;
+    }
+    #cta__container {
+        padding: 2rem 2.5rem !important;
+    }
+    #cta h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #cta #text,
+    #cta .Typewriter {
+        font-size: 2rem !important;
+    }
+    #cta .Typewriter {
+        color: #121212;
+    }
+    #cta #lists {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 320px;
+    }
+    #btn-cta {
+        margin: 0.25rem 0rem !important;
+    }
 }
 
 @media screen and (min-width: 768px) {
     #waitlist {
-        flex-direction: column;
+        flex-direction: column-reverse !important;
         padding: 1rem 2rem;
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+    #hero {
+        height: 100vh !important;
     }
     #waitlist #first-child,
     #waitlist #second-child {
@@ -90,9 +218,27 @@
     #video {
         height: 90vh;
     }
+    #cta #lists {
+        max-width: 320px;
+        flex-direction: column;
+    }
+    .feature_card {
+        margin: 5px 0rem !important;
+        width: 100% !important;
+        min-width: 520px !important;
+    }
+    #stats {
+        max-width: 700px !important;
+    }
+    #cta__container {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+    }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
     header .container {
         padding: 0.25rem 4rem;
     }
@@ -101,13 +247,31 @@
     }
     #waitlist {
         padding: 1rem 4rem;
-        flex-direction: row;
+        flex-direction: row !important;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     #hero {
         padding: 1rem 10rem !important;
+    }
+    .feature_card {
+        width: 360px !important;
+        min-width: 360px !important;
+    }
+    .feature_card:first-child,
+    .feature_card:nth-child(3) {
+        margin-left: 2rem !important;
+    }
+    .feature_card:nth-child(2) {
+        margin-right: 2rem !important;
+    }
+    .feature_card_two:first-child,
+    .feature_card_two:nth-child(3) {
+        margin-right: -2rem !important;
+    }
+    .feature_card_two:nth-child(2) {
+        margin-left: 2rem !important;
     }
     #waitlist #first-child,
     #waitlist #second-child {
@@ -152,8 +316,26 @@
         font-size: 4rem !important;
         color: #121212 !important;
     }
-    .stats {
+    #stats {
         font-size: 3.2rem !important;
         margin-bottom: 1rem;
+        max-width: 90% !important;
+        width: 100% !important;
+    }
+    #cta #lists {
+        max-width: 90% !important;
+        flex-direction: row;
+    }
+    #getWaitlistContainer .gw-px-4.gw-py-5.gw-rounded-md.gw-border.gw-overflow-hidden {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    #getWaitlistInnerContainer {
+        max-width: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+        width: 100% !important;
     }
 }

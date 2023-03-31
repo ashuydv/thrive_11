@@ -2,7 +2,7 @@ import React from "react";
 import HeroImg from "../assets/hero.png";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const HeaderBack = () => {
   return (
     <div>
       <header class="text-gray-400 fixed z-20 w-full body-font sm:flex sm:items-center sm:justify-between ">
@@ -17,7 +17,7 @@ const Header = () => {
             <a class="mr-5 hover:text-white">Fourth Link</a> */}
           </nav>
           <button class="inline-flex items-center text-white bg-gradient-to-tr from-orange-600 to-amber-500 border-0 py-1 px-5 focus:outline-none hover:bg-gray-700 rounded-full text-lg sm:mt-0 md:mt-0">
-            <a href="/get_waitlist">Get Waitlisted Now</a>
+            <Link to="/">Home</Link>
           </button>
         </div>
       </header>
@@ -25,4 +25,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderBack;
